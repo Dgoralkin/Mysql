@@ -25,6 +25,19 @@
             "database": "mydb",
             "username": "root",
             "password": "Octavia67"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "app_connect",
+            "database": "mydb",
+            "username": "appuser",
+            "password": "appuser123"
         }
     ]
 }

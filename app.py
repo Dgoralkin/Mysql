@@ -12,6 +12,7 @@ else:
     print("No connection")
 crsr = db.cursor()
 
+# 0. pip install mysql-connector-python
 # 1. crsr.execute("CREATE DATABASE dany")
 # 2. add database="dany" to db = mysql.connector.connect()
 # 3. crsr.execute("CREATE TABLE Persons (PersonID int, LastName varchar(255))")
@@ -29,8 +30,8 @@ crsr = db.cursor()
 # 8. read = crsr.fetchall()
 
 
-id = 4
-fn = "Romi"
+id = 5
+fn = "Mia"
 ln = "Goralkin"
 person = [id, fn, ln]
 # crsr.execute("INSERT INTO persons (ID, Fname, Lname) VALUES (%s, %s, %s)", person)
@@ -45,7 +46,4 @@ for row in read:
     for x in range(len):
         print(row[x], end = ' ')
     print("")
-
-
-
 
